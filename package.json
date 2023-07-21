@@ -1,20 +1,14 @@
 {
   "name": "projeto-node-vue",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.17.1",
+    "vue": "^3.2.0",
+    "@vue/compiler-sfc": "^3.2.0"
   },
-  "devDependencies": {
-    "vue": "^3.2.36",
-    "vue-router": "^4.2.4"
-  }
+  "scripts": {
+    "start": "node app.js",
+    "build": "vue-cli-service build --target lib --name main src/main.js"
+  },
+  "main": "app.js"
 }

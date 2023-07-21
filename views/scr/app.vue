@@ -1,13 +1,18 @@
 <!-- src/App.vue -->
 <template>
   <div>
-    <h1>Meu Site com Vue.js</h1>
-    <p>Bem-vindo ao meu site criado com Vue.js!</p>
+    <h1>{{ pageTitle }}</h1>
+    <p>{{ welcomeMessage }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  data() {
+    return {
+      pageTitle: 'Projeto Node + Vue',
+      welcomeMessage: 'Bem-vindo ao Meu Site com Vue.js!'
+    };
+  }
 };
 </script>
